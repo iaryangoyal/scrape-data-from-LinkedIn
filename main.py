@@ -17,8 +17,8 @@ import json
 driver=webdriver.Chrome()
 wait = WebDriverWait(driver, 30)
 driver.get("https://linkedin.com/")
-wait.until(EC.presence_of_element_located((By.ID, "session_key"))).send_keys('attendanceantino@gmail.com')
-driver.find_element(By.ID, "session_password").send_keys('Antinoattendance@123')
+wait.until(EC.presence_of_element_located((By.ID, "session_key"))).send_keys('#add your email here')
+driver.find_element(By.ID, "session_password").send_keys('#add your password here')
 driver.find_element(By.CSS_SELECTOR, "button[type='submit']").click()
 print("Login Successfully")
 # time.sleep(8) #give some
